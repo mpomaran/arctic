@@ -1,8 +1,8 @@
 In order to build for Arduino on Windows, please do following:
 
-1. Install arduino 1.0.5 (provided in Tools dir) - newer versions do not work correctly on Windows 10
-2. Install MinGW (setup provided) on c:\mingw
-3. Run configure.bat, specify MinGW Make as a build system and "build" as a build diretory, specify file from toolchain/ArduinoToolchin as a cross-compiling toolchain
+1. Install arduino 1.0.5  - newer versions do not work correctly on Windows 10
+2. Install MinGW on c:\mingw
+3. Run configure.bat, specify MinGW Make as a build system and "build" as a build directory, specify file from toolchain/ArduinoToolchin as a cross-compiling toolchain
 4. Click configure && build
 5. Go to the build directory
 6. Type c:\MinGW\bin\mingw32-make VERBOSE=1

@@ -41,23 +41,19 @@ set (LIB_HEADERS
   pt-1.4/pt-sem.h
   yscript.h
   yassert.h
-  ydukpt.h
   ygsmmodem.h
   yparser.h
   yserial.h
-  ysha.h
   ytimer.h
   ycircbuf.h
   ytypes.h
   tests.h
   ycollection.h
   ycollection_private.h
-  ydukpt.h
   ygsmmodem.h
   ystring.h
   yparser.h
   yserial.h
-  ysha.h
   ysim900_emulator.h
   ytimer.h
   ymessage.h
@@ -77,7 +73,6 @@ set (LIB_SOURCES
   ygsmmodem_unit_tests.c
   yparser.c
   yparser_unit_test.c
-  ysha.c
   ytimer.c
   ycircbuf.c
   ycircbuf_unit_tests.c
@@ -91,7 +86,6 @@ set (LIB_SOURCES
   yparser.c
   yparser_unit_test.c
   yserial_unit_tests.c
-  ysha.c
   ysim900_emulator.c
   ysim900_emulator_unit_tests.c
   ytimer.c
