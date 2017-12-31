@@ -1,6 +1,6 @@
 # arctic
 
-Software for low power IoT sensors with SIM900 module support. It's fairly portable, but was tested on Arduino Uno only.
+Software for low power IoT sensors (like Arduino) with SIM900 module support. It's fairly portable, but was tested on Arduino Uno only.
 
 The counterpart project - the server for M2M applications is coming, but not ready to be released yet.
 
