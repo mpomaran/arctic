@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArcticPanther", "ArcticPanther\ArcticPanther.vcxproj", "{43A10E6E-141A-4741-9342-4319D8E377CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B3E804D-20CA-44FA-8796-E3C009EB81D0}"
+	ProjectSection(SolutionItems) = preProject
+		Arduino build - howto.txt = Arduino build - howto.txt
+		toolchain\Platform\Arduino.cmake = toolchain\Platform\Arduino.cmake
+		toolchain\ArduinoToolchain.cmake = toolchain\ArduinoToolchain.cmake
+		burn.bat = burn.bat
+		burn_pro_mini.bat = burn_pro_mini.bat
+		burn_uno.bat = burn_uno.bat
+		CMakeLists.txt = CMakeLists.txt
+		configure.bat = configure.bat
+		LICENSE = LICENSE
+		make.bat = make.bat
+		README.md = README.md
+		sketch_size.bat = sketch_size.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|ARM.ActiveCfg = Debug|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|iPhone.ActiveCfg = Debug|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|x64.ActiveCfg = Debug|x64
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|x64.Build.0 = Debug|x64
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|x86.ActiveCfg = Debug|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Debug|x86.Build.0 = Debug|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|Any CPU.ActiveCfg = Release|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|ARM.ActiveCfg = Release|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|iPhone.ActiveCfg = Release|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|iPhoneSimulator.ActiveCfg = Release|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|x64.ActiveCfg = Release|x64
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|x64.Build.0 = Release|x64
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|x86.ActiveCfg = Release|Win32
+		{43A10E6E-141A-4741-9342-4319D8E377CB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F71AEE18-2735-4937-BCBE-A0E015C831AD}
+	EndGlobalSection
+EndGlobal

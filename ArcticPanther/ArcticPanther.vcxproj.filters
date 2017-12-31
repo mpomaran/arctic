@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="pt">
+      <UniqueIdentifier>{e8b65bcd-f4b3-4588-8813-1b41f969e679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ubasic">
+      <UniqueIdentifier>{161c7939-09a4-4e30-8f4c-f829a33b07ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArcticPanther.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ygsmmodem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ygsmmodem_unit_tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yparser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yparser_unit_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yserial_unit_tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ytimer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yassert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\win32\yserial_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ycircbuf_unit_tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ycircbuf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ytimer_unit_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ylist_test_suite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ylist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ycollection_private.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ysim900_emulator_unit_tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ysim900_emulator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\win32\yhal_win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ystring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ystring_unit_tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yrand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ymessage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ymessage_unit_tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ubasic\ubasic_tests.c">
+      <Filter>ubasic</Filter>
+    </ClCompile>
+    <ClCompile Include="ubasic\ubasic_tokenizer.c">
+      <Filter>ubasic</Filter>
+    </ClCompile>
+    <ClCompile Include="ubasic\ubasic_use-ubasic.c">
+      <Filter>ubasic</Filter>
+    </ClCompile>
+    <ClCompile Include="ubasic\ubasic.c">
+      <Filter>ubasic</Filter>
+    </ClCompile>
+    <ClCompile Include="yscript.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yassert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ygsmmodem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yserial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ytimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\win32\config_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ycircbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ytypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ycollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ycollection_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ysim900_emulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pt-1.4\lc.h">
+      <Filter>pt</Filter>
+    </ClInclude>
+    <ClInclude Include="pt-1.4\lc-addrlabels.h">
+      <Filter>pt</Filter>
+    </ClInclude>
+    <ClInclude Include="pt-1.4\lc-switch.h">
+      <Filter>pt</Filter>
+    </ClInclude>
+    <ClInclude Include="pt-1.4\pt.h">
+      <Filter>pt</Filter>
+    </ClInclude>
+    <ClInclude Include="pt-1.4\pt-sem.h">
+      <Filter>pt</Filter>
+    </ClInclude>
+    <ClInclude Include="ystring.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yrand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ymessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ubasic\ubasic_tokenizer.h">
+      <Filter>ubasic</Filter>
+    </ClInclude>
+    <ClInclude Include="ubasic\ubasic_vartype.h">
+      <Filter>ubasic</Filter>
+    </ClInclude>
+    <ClInclude Include="ubasic\ubasic.h">
+      <Filter>ubasic</Filter>
+    </ClInclude>
+    <ClInclude Include="yscript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\doc\modem_state_machine.dot" />
+  </ItemGroup>
+</Project>
