@@ -2,7 +2,7 @@
 
 Software for low power IoT sensors (like Arduino) with SIM900 module support. It's fairly portable, but was tested on Arduino Uno only.
 
-The counterpart project - the server for M2M applications is coming, but not ready to be released yet.
+You can follow the server project here: https://github.com/mpomaran/cleric
 
 Features following:
  - multitasking capability on bare atmega328/P processor (arduino compatible)
