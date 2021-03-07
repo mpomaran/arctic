@@ -3,7 +3,7 @@
 # https://github.com/queezythegreat/arduino-cmake
 #
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0...3.19)
 
 set(ARDUINO_DEFAULT_BOARD uno) # Default Board ID, when not specified
 # set(ARDUINO_DEFAULT_PORT /dev/ttyUSB0) # Default Port, when not specified

@@ -125,9 +125,9 @@ size_t yserial_test_simulate_received(yserial_t serial, const uint8_t *buff,
 */
 void yserial_test_set_fake_mode(yserial_t serial,
                                 yserial_test_data_receiver_callback_fn cb,
-                                void *cookie) {
+                                const void *cookie) {
   serial->callback = cb;
-  serial->cookie = cookie;
+  serial->cookie = const_cast<void *>(cookie);
 }
 
 #ifdef __cplusplus

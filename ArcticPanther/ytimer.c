@@ -155,6 +155,6 @@ void ytimer_set_uptime_in_ms(uint64_t current_uptime_ms) {
 
 void ytimer_force_init() { initialized = false; }
 
-uint32_t ytimer_millis() { return yhal_millis() + it.skew; }
+uint32_t ytimer_millis() { return yhal_millis() + (uint32_t)it.skew; }
 
 void ytimer_millis_add_skew(int32_t skew) { it.skew += skew; }

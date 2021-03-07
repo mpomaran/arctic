@@ -113,7 +113,7 @@ AND enables test mode
 */
 void yserial_test_set_fake_mode(yserial_t serial,
                                 yserial_test_data_receiver_callback_fn cb,
-                                void *cookie);
+                                const void *cookie);
 
 #ifdef __cplusplus
 }

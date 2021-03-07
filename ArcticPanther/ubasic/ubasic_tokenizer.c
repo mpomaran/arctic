@@ -40,6 +40,7 @@
 #include <ytypes.h>
 #include <yassert.h>
 #include <ystring.h>
+#include <ctype.h>
 
 static char const *ptr, *nextptr;
 

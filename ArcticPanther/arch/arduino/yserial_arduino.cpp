@@ -136,7 +136,7 @@ extern "C" {
 	/**
 	\bref TEST API - sets callback which is to be called each time user uses "write"
 	*/
-	void		yserial_test_set_fake_mode(yserial_t serial, yserial_test_data_receiver_callback_fn cb, void* cookie)
+	void		yserial_test_set_fake_mode(yserial_t serial, yserial_test_data_receiver_callback_fn cb, const void* cookie)
 	{
 		if (is_sim_mode(serial)) {
 			ycircbuf_free(serial->buf);
@@ -147,7 +147,7 @@ extern "C" {
 		}
 
 		serial->callback = cb;
-		serial->cookie = cookie;
+		serial->cookie = const_cast<void *>(cookie);
 	}
 
 #ifdef __cplusplus

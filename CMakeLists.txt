@@ -5,7 +5,7 @@
 # Description: Arduino CMake example                                          #
 #                                                                             #
 #=============================================================================#
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0...3.19)
 
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/toolchain/ArduinoToolchain.cmake) # Arduino Toolchain
 set ( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Os")
