@@ -113,13 +113,11 @@ uint16_t yhal_read_vcc()
   ADCSRA |= _BV(ADSC); // Start conversion
   while (bit_is_set(ADCSRA,ADSC)); // measuring
 
-  uint8_t low  = ADCL; // must read ADCL first - it then locks ADCH  
-  uint8_t high = ADCH; // unlocks both
-
-  uint16_t result = (high<<8) | low;
+  uint32_t result = ADCL;
+  result |= ADCH<<8;
 
   result = 1125300L / result; // Calculate Vcc (in mV); 1125300 = 1.1*1023*1000
-  return result; // Vcc in millivolts
+  return (uint16_t)result; // Vcc in millivolts
 }
 
 
