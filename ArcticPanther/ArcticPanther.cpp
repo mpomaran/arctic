@@ -55,6 +55,8 @@ int main() {
 #include <yserial.h>
 #include <ystring.h>
 
+#include "secrets.h"
+
 const static uint8_t BLINK_PIN = 13;
 const static uint8_t NOISY_PIN = 12;
 static uint8_t SENSOR_PIN = 0;
@@ -65,13 +67,12 @@ static uint8_t SENSOR_POWER_PIN = 2;
 static uint8_t GSM_POWER_PIN = 6;
 
 const static uint32_t LOW_POWER_SLEEP_DURATION_MIN = 60;
-const static uint32_t MILLIS_PER_MINUTE = 1000; // TODO - change for real val.
+const static uint32_t MILLIS_PER_MINUTE = 1000*60; // TODO - change for real val.
 
 static char *M2M_URL =
-    (char *)"http://<enter your ULR here>/m2m/"
-            "0cccccccccccccccc00112233445566778899aabbccddeeff";
-static const uint8_t CONST_URL_PART_LEN =
-    29; /* constant part, not to be overwritten */
+    (char *)MY_BRIDGE_PREFIX
+            "cccccccccccccccc00112233445566778899aabbccddeeff";
+static const uint8_t CONST_URL_PART_LEN = sizeof(MY_BRIDGE_PREFIX) - 1; /* constant part, not to be overwritten */
 static const uint8_t PAYLOAD_LEN = 48;
 
 void blink_setup(uint8_t pin = BLINK_PIN) {
@@ -156,16 +157,10 @@ static uint32_t read_sensor() {
   }
   vcc &= 1023;
 
-  ytrace(sensor_reading);
-  ytrace(sensor_type_reading);
-
   yhal_set_pin_state(POWER_PIN, Y_LOW);
   ytrace(vcc);
   ytrace(sensor_reading);
   ytrace(sensor_type_reading);
-
-  // TODO remove
-  sensor_reading = vcc;
 
   return (uint32_t)sensor_reading + ((uint32_t)vcc << 11) +
          ((uint32_t)sensor_type_reading << 22);
