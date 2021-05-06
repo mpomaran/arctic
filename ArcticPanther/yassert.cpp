@@ -38,16 +38,21 @@ extern char *__malloc_heap_end;
 
 static bool speedSet = false;
 
-static void _lazySerialInit() {
-  if (!speedSet) {
+static void _lazySerialInit()
+{
+  if (!speedSet)
+  {
     Serial.begin(4800);
     speedSet = true;
   }
 }
 
 static void separator() { Serial.print(":"); }
+static void _fileheader() { Serial.print("F"); }
+static void _lineheader() { Serial.print("L"); }
 
-static void meminfo() {
+static void meminfo()
+{
 #ifdef _WIN32
   int RAMEND = 0;
   int SP = 0;
@@ -56,10 +61,9 @@ static void meminfo() {
   int __malloc_heap_end = 0;
 #endif
 
-  separator();
+  Serial.print("<MEM");
   separator();
   Serial.print(SP - (int)__brkval);
-  separator();
   separator();
   Serial.print((int)__malloc_heap_start);
   separator();
@@ -68,21 +72,23 @@ static void meminfo() {
   Serial.print(SP);
   separator();
   Serial.print(RAMEND);
-  separator();
-  separator();
+  Serial.print(">");
 }
 
-static void header() {
+static void header()
+{
 
   _lazySerialInit();
   Serial.print("T");
   meminfo();
 }
 
-extern "C" void __ytrace(const char *__file, int __lineno, int32_t param) {
+extern "C" void __ytrace(const char *__file, int __lineno, int32_t param)
+{
   header();
+  _fileheader();
   Serial.print(__file);
-  separator();
+  _lineheader();
   Serial.print(__lineno, DEC);
   separator();
   Serial.println(param, DEC);
@@ -93,7 +99,8 @@ extern "C" void __ytrace(const char *__file, int __lineno, int32_t param) {
 }
 
 extern "C" void __ytracestr(const char *__file, int __lineno,
-                            const char *param) {
+                            const char *param)
+{
   header();
   Serial.print(__file);
   separator();
@@ -107,14 +114,20 @@ extern "C" void __ytracestr(const char *__file, int __lineno,
 
 // handle diagnostic informations given by assertion and abort program
 // execution:
-extern "C" void __yassert(const char *__file, int __lineno) {
+extern "C" void __yassert(const char *__file, int __lineno)
+{
   // transmit diagnostic informations through serial link.
   header();
-  meminfo();
+  Serial.println("ABRT");
+  _fileheader();
   Serial.println(__file);
+  _lineheader();
   Serial.println(__lineno, DEC);
+  separator();
+
   Serial.flush();
-  do {
+  do
+  {
     // NOP
   } while (1);
 }

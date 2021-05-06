@@ -572,7 +572,7 @@ static PT_THREAD(enablng_fiber(struct pt *pt)) {
 
   /* setup gprs communication */
 
-  /* TODO provider discovery */
+  /* TODO provider discovery, hardcoded for now */
   ystring_cpy_fstring_to_buff(ATT_CGATT_1);
   PT_SPAWN_AND_ASSERT_SUCCESS(pt, &enabler.at_pt,
                               at_set(ystring_buff, &enabler.at_pt),
@@ -778,7 +778,7 @@ static PT_THREAD(transmitting_fiber(struct pt *pt)) {
     }
 
     http_read_len = at.params.param1;
-    http_response_len = http_read_len; // TODO how AT works here?
+    http_response_len = http_read_len; // TODO to verify
     serial_consumer.mode = BYTE;
 
     /* read byte after byte */

@@ -31,7 +31,8 @@ SOFTWARE.
 #include <ystring.h>
 #include <ytimer.h>
 
-#define SECRET_KEY (0x123456789abcdef0L)
+#include "secrets.h"
+
 uint8_t nibble_to_char(uint8_t nibble) {
   if (nibble < 10)
     return '0' + nibble;

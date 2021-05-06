@@ -15,7 +15,7 @@ Features following:
 To build under Windows please open the VS2017 solution.
 In order to build for Arduino please follow Arduino build - howto.txt.
 
-Please set correct URL in ArcticPanther.cpp (M2M_URL) and encryption key in ymessage.c (SECRET_KEY)
+Before the build you need to rename secrets.h.example to secrets.h and fill gateway url, incuding port (see [Arctic Panther](https://github.com/mpomaran/arctic)) and encryption key (must match the gateway). 
 
 This project incorporates code from pt and uBasic projects, so their licenses apply.
 
@@ -35,7 +35,7 @@ Open ArcticPanther.sln. Compile for x86 (64 bit is not tested).
 
 If VS throws an error related to the SDK simply follow its advice and re-target.
 
-### Arduino
+### Cross compilation on Windows
 
 1. Install arduino 1.0.5 - newer versions may not work correctly and were not tested (older versios might be obtained from <https://www.arduino.cc/en/main/OldSoftwareReleases>)
 2. Install MinGW on c:\mingw
@@ -46,3 +46,5 @@ If VS throws an error related to the SDK simply follow its advice and re-target.
     - Click "Specify toolchain file for cross-compiling", pick toolchain/ArduinoToolchain.cmake
 4. Click configure && build
 5. Execute make.bat
+
+If you have any issues or errors during configuration please remove the cache re-run cmake-gui.
