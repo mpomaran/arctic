@@ -19,6 +19,17 @@ Before the build you need to rename secrets.h.example to secrets.h and fill gate
 
 This project incorporates code from pt and uBasic projects, so their licenses apply.
 
+## Hardware
+The hardware used is Arduino Mini Pro 5V, with following connections:
+A0 - input to the resistor defining the type of the device (resistor between +5V and A0)
+A1 - input to the data signal from the sensor
+D5 - output pin - has +5V when sensor is being used, 0V when idle,  used to switch power to sensor
+D6 - output pin - +5V when modem is used, 0V when idle, used to switch power to the modem
+
+I powered the Arduino from +9V battery pack trough the buck converter.
+Additionaly I cut off LEDs from Arduino as they eat quite a lot of power (see [Making An Ultra Low Power Arduino Pro](https://www.the-diy-life.com/making-an-ultra-low-power-arduino-pro/) for details).
+
+
 ## Development environment
 
 The project compiles and runs on Windows as well as on Arduino. On Windows, the microcontroller’s hardware is emulated and most of the code uses API provided in the "arch" directory. Windows implementation uses the SIM900 emulator, where Arduino one needs to have the real device connected.
