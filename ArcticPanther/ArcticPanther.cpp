@@ -163,8 +163,8 @@ static uint32_t read_sensor()
   {
     sensor_reading_temp += yhal_read_analog(SENSOR_PIN) & 1023;
   }
-  ;
-  sensor_reading = (uint16_t)(sensor_reading_temp / MAX_SAMPLES);
+  
+  sensor_reading = ((uint16_t)(sensor_reading_temp / MAX_SAMPLES)) & 1023;
 
   sensor_type_reading = (yhal_read_analog(SENSOR_TYPE_PIN) >> 1) & 511;
   vcc = yhal_read_vcc();
